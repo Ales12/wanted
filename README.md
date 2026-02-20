@@ -1,5 +1,6 @@
 # Gesuchsübersicht
-Hier kannst du deine Gesuche Informationen geben und sie auf dem Index per Zufall anzeigen lassen. Die Informationen werden zudem, wenn gewollt, auch im Profil angezeigt. Es ist möglich die Gesuche auf dem Index im Header oder über eine Kategorie anzuzeigen. 
+Hier kannst du deine Gesuche Informationen geben und sie auf dem Index per Zufall anzeigen lassen. Die Informationen werden zudem, wenn gewollt, auch im Profil angezeigt. Es ist möglich die Gesuche auf dem Index im Header oder über eine Kategorie anzuzeigen.  
+Ihr könnt die Sprachvariabel anpassen, wie ihr möchtet. Es wurde ein extra Feld mit eingefügt, welches hier noch _weitere Informationen_ heißt. Passt die einfach über die Sprachdatei an, wie ihr es braucht. Weitere Felder müssen händisch über die Datenbank hinzugefügt werden und natürlich dann die PHP angepasst werden.
 
 ## neue Templates
 - wanted_bit_global 	
