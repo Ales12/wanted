@@ -401,6 +401,7 @@ function wanted_activate()
 {
     global $db, $cache;
     require MYBB_ROOT . "/inc/adminfunctions_templates.php";
+	 find_replace_templatesets("editpost", "#" . preg_quote('{$posticons}') . "#i", '{$wanted_edit}{$posticons}');
     find_replace_templatesets("forumbit_depth1_cat", "#" . preg_quote('<table border="0"') . "#i", '{$forum[\'wanted\']}<table border="0"');
     find_replace_templatesets("forumdisplay_thread", "#" . preg_quote('<span class="thread_start_datetime smalltext">{$thread[\'start_datetime\']}</span></div>
 		</div>') . "#i", '<span class="thread_start_datetime smalltext">{$thread[\'start_datetime\']}</span></div>
@@ -414,6 +415,7 @@ function wanted_activate()
 function wanted_deactivate()
 {
     require MYBB_ROOT . "/inc/adminfunctions_templates.php";
+	ind_replace_templatesets("editpost", "#" . preg_quote('{$wanted_edit}') . "#i", '', 0);
     find_replace_templatesets("forumbit_depth1_cat", "#" . preg_quote('{$forum[\'wanted\']}') . "#i", '', 0);
     find_replace_templatesets("forumdisplay_thread", "#" . preg_quote('{$wanted_forumdisplay}') . "#i", '', 0);
     find_replace_templatesets("header", "#" . preg_quote('{$wanted_global}') . "#i", '', 0);
@@ -724,4 +726,5 @@ function wanted_profile()
     }
 
 }
+
 
