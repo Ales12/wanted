@@ -17,6 +17,7 @@ Ihr könnt die Sprachvariabel anpassen, wie ihr möchtet. Es wurde ein extra Fel
 **forumdisplay_thread** ``{$wanted_forumdisplay}``  
 **header** ``{$wanted_global}``  
 **member_profile** ``{$wanted_profile}``  
+**showthread** ``{$wanted_showthread}``  
 
 ## neue CSS
 wanted.css
