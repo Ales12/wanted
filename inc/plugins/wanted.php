@@ -407,6 +407,7 @@ function wanted_activate()
 		</div>{$wanted_forumdisplay}');
         find_replace_templatesets("header", "#" . preg_quote('<navigation>') . "#i", '<navigation>   {$wanted_global}');
         find_replace_templatesets("member_profile", "#" . preg_quote('{$awaybit}') . "#i", '{$awaybit} {$wanted_profile}');
+	 find_replace_templatesets("showthread", "#" . preg_quote(' <tr><td id="posts_container">') . "#i", '{$wanted_showthread} <tr><td id="posts_container">');
     }
 
 function wanted_deactivate()
@@ -416,6 +417,7 @@ function wanted_deactivate()
     find_replace_templatesets("forumdisplay_thread", "#" . preg_quote('{$wanted_forumdisplay}') . "#i", '', 0);
     find_replace_templatesets("header", "#" . preg_quote('{$wanted_global}') . "#i", '', 0);
     find_replace_templatesets("member_profile", "#" . preg_quote('{$wanted_profile}') . "#i", '', 0);
+	  find_replace_templatesets("member_profile", "#" . preg_quote('{$wanted_showthread}') . "#i", '', 0);
 }
 
 function wanted_settings_change()
@@ -718,4 +720,5 @@ function wanted_profile()
         }
         eval ("\$wanted_profile = \"" . $templates->get("wanted_profile") . "\";");
     }
+
 }
