@@ -13,6 +13,7 @@ Ihr könnt die Sprachvariabel anpassen, wie ihr möchtet. Es wurde ein extra Fel
 - wanted_showthread
   
 ## variabeln
+**editpost** ``{$wanted_edit}``  
 **forumbit_depth1_cat** ``{$forum['wanted']}``  
 **forumdisplay_thread** ``{$wanted_forumdisplay}``  
 **header** ``{$wanted_global}``  
